@@ -18,11 +18,11 @@ function Sorteio(props) {
   );
 }
 
-function mapStateToProp(state) {
+function mapStateToProps(state) {
   return {
     min: state.numeros.min,
     max: state.numeros.max,
   };
 }
 
-export default connect(mapStateToProp)(Sorteio);
+export default connect(mapStateToProps)(Sorteio);

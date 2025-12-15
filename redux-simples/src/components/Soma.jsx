@@ -17,11 +17,11 @@ function Soma(props) {
     )
 }
 
-function mapStateToProp(state) {
+function mapStateToProps(state) {
     return {
         min: state.numeros.min,
         max: state.numeros.max,
     }
 }
 
-export default connect(mapStateToProp)(Soma)
+export default connect(mapStateToProps)(Soma)

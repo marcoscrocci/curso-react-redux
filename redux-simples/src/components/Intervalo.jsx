@@ -33,7 +33,7 @@ function mapStateToProps(state) {
   };
 }
 
-function mapDispatchToProp(dispatch) {
+function mapDispatchToProps(dispatch) {
   return {
     alterarMinimo(novoNumero) {
       // action creator -> action
@@ -50,5 +50,5 @@ function mapDispatchToProp(dispatch) {
 
 export default connect(
     mapStateToProps,
-    mapDispatchToProp
+    mapDispatchToProps
 )(Intervalo);
